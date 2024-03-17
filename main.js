@@ -23,6 +23,13 @@ const printPokemon = async (pokemonFetch) => {
   const pokemonImage = document.createElement("img");
   pokemonImage.src = pokemon.imagemFront;
   pokemonImage.classList.add("pokemon-gif");
+  pokemonImage.addEventListener("click", () => {
+    if (pokemonImage.src === pokemon.imagemFront) {
+      pokemonImage.src = pokemon.imgemBack;
+    } else {
+      pokemonImage.src = pokemon.imagemFront;
+    }
+  });
   pokemonCard.appendChild(pokemonImage);
   pokemonCard.appendChild(pokemonName);
 };

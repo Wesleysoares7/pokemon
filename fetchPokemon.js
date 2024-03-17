@@ -7,7 +7,7 @@ export const featPokemon = async (pokemonName) => {
     id: pokemon.id,
     name: pokemon.name,
     imagemFront: pokemon.sprites.other.showdown.front_default,
-    imgeBack: pokemon.sprites.other.showdown.front_default,
+    imgemBack: pokemon.sprites.other.showdown.back_default,
     types: pokemon.types,
   };
   return pokemonReturne;
