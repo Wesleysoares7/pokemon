@@ -19,7 +19,7 @@ body {
 }
 
 .character img {
-  width: 78%;
+  width: 79%;
   margin-left: 17.3rem;
 }
 
@@ -87,10 +87,8 @@ body {
 
 .button {
   display: inline;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: bisque;
+  background-color: rgb(14, 12, 10);
+  color: white;
   width: 5rem;
   height: 1.5rem;
   border-radius: 0.5rem;
