@@ -7,16 +7,24 @@ const input = document.querySelector("input");
 const searchButton = document.querySelector(".pesquisar");
 let pokemonId;
 
+const capitalizeFirstLetter = (string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
 const printPokemon = async (pokemonFetch) => {
   pokemonCard.innerHTML = "";
   const pokemon = await featPokemon(pokemonFetch);
   pokemonId = pokemon.id;
   const pokemonName = document.createElement("p");
-  pokemonName.innerText = pokemon.name;
+  pokemonName.innerText = `${pokemon.id}: ${capitalizeFirstLetter(
+    pokemon.name
+  )}`;
+  pokemonName.classList.add("pokemon-name");
   const pokemonImage = document.createElement("img");
   pokemonImage.src = pokemon.imagemFront;
-  pokemonCard.appendChild(pokemonName);
+  pokemonImage.classList.add("pokemon-gif");
   pokemonCard.appendChild(pokemonImage);
+  pokemonCard.appendChild(pokemonName);
 };
 
 const nextPokemon = () => {
