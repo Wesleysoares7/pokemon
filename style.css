@@ -16,6 +16,11 @@ body {
   margin: auto;
   gap: 1rem;
   position: relative;
+  background: -webkit-linear-gradient(left, #0a285f, #0075be);
+  background: -moz-linear-gradient(left, #0a285f, #0075be);
+  background: -ms-linear-gradient(left, #0a285f, #0075be);
+  background: -o-linear-gradient(left, #0a285f, #0075be);
+  background: linear-gradient(to right, #0a285f, #0075be);
 }
 
 .character img {
@@ -91,6 +96,5 @@ body {
   color: white;
   width: 5rem;
   height: 1.5rem;
-  border-radius: 0.5rem;
   cursor: pointer;
 }

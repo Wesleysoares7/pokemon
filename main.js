@@ -60,8 +60,12 @@ const keyboardControl = (event) => {
 window.addEventListener("keydown", keyboardControl);
 
 const searchPokemon = () => {
-  const pokemon = input.value;
-  printPokemon(pokemon);
+  const pokemon = input.value.trim();
+  if (pokemon !== "") {
+    printPokemon(pokemon);
+  } else {
+    alert("Por favor, insira o nome ou número do Pokémon para pesquisar.");
+  }
 };
 
 searchButton.addEventListener("click", searchPokemon);
